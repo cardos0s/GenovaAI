@@ -15,10 +15,6 @@
     
     <ContentPage.Content>
         <Grid RowDefinitions="*,*,*,*" Padding="16">
-              <Label Text="Controle. Inteligência. Liberdade financeira. Tudo com Genova!"
-                     FontSize="25"
-                     TextColor="White"
-                     HorizontalTextAlignment="Center"/>
               <Image Source="genova_logo.png"
                      HeightRequest="850"
                      HorizontalOptions="Center"
