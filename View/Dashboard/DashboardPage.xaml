@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:templates="clr-namespace:GenovaAI.Templates"
+             xmlns:chart="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+             x:Class="GenovaAI.View.DashboardPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="MidnightBlue">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Template de Investimento -->
+            <DataTemplate x:Key="InvestimentoCardTemplate">
+                <Frame BackgroundColor="White"
+                       Padding="20"
+                       Margin="10"
+                       HeightRequest="300"
+                       HasShadow="True">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="InvestimentoTapped" />
+                    </Frame.GestureRecognizers>
+                    <VerticalStackLayout Spacing="10" >
+                        <Label Text="{Binding Titulo}" FontSize="20" FontAttributes="Bold" />
+                        <Label Text="{Binding Descricao}" FontSize="16" Margin="0,10,0,0" />
+                        <chart:ChartView Chart="{Binding Grafico}" HeightRequest="120"/>
+                        <Label Text="{Binding UltimaAtualizacao}"
+                               FontSize="12"
+                               TextColor="Gray"
+                               HorizontalOptions="End"/>
+                    </VerticalStackLayout>
+                </Frame>
+            </DataTemplate> 
+            
+            <!-- Template de IA -->
+            <DataTemplate x:Key="IACardTemplate">
+                <Frame BackgroundColor="LightBlue"
+                       Padding="20"
+                       Margin="10"
+                       HeightRequest="300"
+                       HasShadow="True">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="IATapped"/>
+                    </Frame.GestureRecognizers>
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Titulo}" FontSize="20" FontAttributes="Bold" />
+                        <Label Text="{Binding Descricao}" FontSize="16" Margin="0,10,0,0" />
+                    </VerticalStackLayout>
+                </Frame>
+            </DataTemplate>
+
+            <!-- Template de Relatório -->
+            <DataTemplate x:Key="RelatorioCardTemplate">
+                <Frame BackgroundColor="LightGray"
+                       Padding="20"
+                       Margin="10"
+                       HeightRequest="300"
+                       HasShadow="True">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="RelatorioTapped" />
+                    </Frame.GestureRecognizers>
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Titulo}" FontSize="20" FontAttributes="Bold" />
+                        <Label Text="{Binding Descricao}" FontSize="16" Margin="0,10,0,0" />
+                    </VerticalStackLayout>
+                </Frame>
+            </DataTemplate>
+
+            <!-- Seletor de Templates -->
+            <templates:CardTemplateSelector 
+                x:Key="CardSelector"
+                InvestimentoTemplate="{StaticResource InvestimentoCardTemplate}"
+                IATemplate="{StaticResource IACardTemplate}"
+                RelatorioTemplate="{StaticResource RelatorioCardTemplate}" />
+            
+        </ResourceDictionary>
+        
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,Auto,Auto,*"
+              ColumnDefinitions="*"
+              Padding="16">
+            
+            <!-- Boas-vindas -->
+            <Label Text="Welcome Back," 
+                   TextColor="White" 
+                   FontSize="20"/>
+
+            <Label Text="Shelby" 
+                   Grid.Row="1" 
+                   TextColor="Yellow" 
+                   FontSize="23"/>
+
+            <!-- Cotação -->
+            <VerticalStackLayout Grid.Row="1" 
+                                 Padding="36" 
+                                 Margin="16">
+                <Frame
+                    BackgroundColor="#1E1E8F"
+                    CornerRadius="20"
+                    Padding="12"
+                    HeightRequest="100"
+                    WidthRequest="350"
+                    HasShadow="False"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Dolar}"
+                               TextColor="White"
+                               FontSize="20"/>
+                        <Label Text="₿ Bitcoin: R$ 342.000"
+                               TextColor="White"
+                               FontSize="15"/>
+                    </VerticalStackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnDashboardTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </VerticalStackLayout>
+
+            <!-- CarouselView de Cards -->
+            <CarouselView Grid.Row="2"
+                          ItemsSource="{Binding ListaDeCards}"
+                          HeightRequest="250"
+                          HorizontalOptions="Fill"
+                          PeekAreaInsets="10"
+                          Margin="0,20,0,0"
+                          ItemTemplate="{StaticResource CardSelector}" />
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

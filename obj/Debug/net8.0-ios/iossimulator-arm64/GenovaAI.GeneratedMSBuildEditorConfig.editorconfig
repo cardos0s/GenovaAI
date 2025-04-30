@@ -1,0 +1,71 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GenovaAI
+build_property.ProjectDir = /Volumes/Aplicativos/Aplicativos/Genova/GenovaAI/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[/Volumes/Aplicativos/Aplicativos/Genova/GenovaAI/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GenovaAI.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Volumes/Aplicativos/Aplicativos/Genova/GenovaAI/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GenovaAI.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Volumes/Aplicativos/Aplicativos/Genova/GenovaAI/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GenovaAI.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Volumes/Aplicativos/Aplicativos/Genova/GenovaAI/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GenovaAI.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Volumes/Aplicativos/Aplicativos/Genova/GenovaAI/View/Dashboard/DashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GenovaAI.View.Dashboard.DashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View/Dashboard/DashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View/Dashboard/DashboardPage.xaml
+
+[/Volumes/Aplicativos/Aplicativos/Genova/GenovaAI/View/Dashboard/IAPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GenovaAI.View.Dashboard.IAPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View/Dashboard/IAPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View/Dashboard/IAPage.xaml
+
+[/Volumes/Aplicativos/Aplicativos/Genova/GenovaAI/View/Dashboard/InvestmentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GenovaAI.View.Dashboard.InvestmentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View/Dashboard/InvestmentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View/Dashboard/InvestmentPage.xaml
+
+[/Volumes/Aplicativos/Aplicativos/Genova/GenovaAI/View/Dashboard/RelatorioPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GenovaAI.View.Dashboard.RelatorioPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View/Dashboard/RelatorioPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View/Dashboard/RelatorioPage.xaml
+
+[/Volumes/Aplicativos/Aplicativos/Genova/GenovaAI/View/Login/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GenovaAI.View.Login.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View/Login/LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View/Login/LoginPage.xaml
