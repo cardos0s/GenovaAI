@@ -1,0 +1,65 @@
+# Build results
+bin/
+obj/
+build/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Visual Studio
+.vscode/
+.vs/
+*.csproj.user
+*.dbmdl
+
+# Xamarin / .NET MAUI
+*.apk
+*.ap_
+*.aab
+*.keystore
+*.dll
+*.exe
+*.pdb
+*.app
+*.ipa
+*.xcarchive
+*.xcuserstate
+*.xcodeproj/*
+*.xcworkspace/*
+*.s
+*.dSYM/
+
+# JetBrains (Rider)
+.idea/
+
+# Mac system files
+.DS_Store
+
+# Logs
+*.log
+
+# Secrets (nunca subir isso)
+secrets.json
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# TFM-specific output
+net*/obj/
+net*/bin/
+
+# Publish folders
+publish/
