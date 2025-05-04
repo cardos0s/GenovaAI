@@ -4,9 +4,15 @@
              xmlns:templates="clr-namespace:GenovaAI.Templates"
              xmlns:chart="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
              x:Class="GenovaAI.View.DashboardPage"
-             Shell.NavBarIsVisible="False"
-             BackgroundColor="MidnightBlue">
-
+             Shell.NavBarIsVisible="False">
+    
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#000000" Offset="0.0" />
+            <GradientStop Color="#151486" Offset="1.0" />
+        </LinearGradientBrush>
+        
+    </ContentPage.Background>
     <ContentPage.Resources>
         <ResourceDictionary>
             <!-- Template de Investimento -->

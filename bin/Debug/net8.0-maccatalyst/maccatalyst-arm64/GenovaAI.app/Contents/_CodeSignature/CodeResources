@@ -36,6 +36,10 @@
 		<data>
 		JXq1NV2VFMYvNAJD3kQgjFwELfU=
 		</data>
+		<key>Resources/genova_logo.png</key>
+		<data>
+		4o26nlVRcnIKwbg/XGla2Ez/JqM=
+		</data>
 		<key>Resources/logo_g.png</key>
 		<data>
 		BUjpeo9aOhiDlvNYgwqnWvrcrQE=
@@ -64,14 +68,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l8RpGMcPem3sZ1ZFsu3MeFOeMFm9PMmazqPcvDb3rJY=
+			yqNZ/H5tUQtArHqEnoMa3L8BhDsjdhHrytn+ybkvfJg=
 			</data>
 		</dict>
 		<key>MonoBundle/GenovaAI.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vOblwyGyogy1KxyjMQh8hcGKH4yOD+sKEZdeZ1PLOE4=
+			II3ZYWLawV75OJKuuta+QFlowewzIQ2JAEIPbKbhpcQ=
 			</data>
 		</dict>
 		<key>MonoBundle/Microcharts.Maui.dll</key>
@@ -1408,7 +1412,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f8C/c4gTE0A2jrpgSwsPMkYvPBvcbJ0Qqz9RVDPk5X4=
+			vF9LATuWadf1d5yDLKYrQkc8/aSMCItWdCOXHxhVc2M=
 			</data>
 		</dict>
 		<key>MonoBundle/ar/Microsoft.Maui.Controls.resources.dll</key>
@@ -1731,6 +1735,13 @@
 			<key>hash2</key>
 			<data>
 			RrRN8aaeF4pXx/ko3DljaqKbNbyiyGR1JEC5w0Czcmw=
+			</data>
+		</dict>
+		<key>Resources/genova_logo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dB9zM6JZvsmYpzKNKcsNvxFerLY5zYf6u375uTflcpQ=
 			</data>
 		</dict>
 		<key>Resources/logo_g.png</key>

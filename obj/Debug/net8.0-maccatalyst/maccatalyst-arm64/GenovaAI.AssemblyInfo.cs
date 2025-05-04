@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GenovaAI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+2d34e3447b7a45e26a8ed54c0f296f21079fab2c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+6dc164c77c028f703971256c2ce9a4df252e6c8d")]
 [assembly: System.Reflection.AssemblyProductAttribute("GenovaAI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GenovaAI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
