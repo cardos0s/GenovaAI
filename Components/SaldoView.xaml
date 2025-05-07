@@ -6,11 +6,6 @@
              x:Class="GenovaAI.Components.SaldoView"
              x:DataType="viewModels:SaldoViewModel">
     
-    <ContentView.Resources>
-        <ResourceDictionary Source="/Resources/Styles/Styles.xaml" />
-        <ResourceDictionary Source="/Resources/Styles/Colors.xaml" />
-        <ResourceDictionary Source="/Resources/Styles/Brushes.xaml" />
-    </ContentView.Resources>
     <VerticalStackLayout>
      <Border Padding="10"
              StrokeThickness="0"

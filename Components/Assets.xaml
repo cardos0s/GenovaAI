@@ -4,16 +4,44 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GenovaAI.Components.Assets">
     
-    <ContentView.Resources>
-        <ResourceDictionary Source="/Resources/Styles/Styles.xaml" />
-        <ResourceDictionary Source="/Resources/Styles/Colors.xaml" />
-        <ResourceDictionary Source="/Resources/Styles/Brushes.xaml" />
-    </ContentView.Resources>
-    
-    
-    <VerticalStackLayout>
-        <Label Text="Your Assets" Style="{StaticResource SectionTitle}" />
-        <Label Text="Veja abaixo suas criptos em destaque." Style="{StaticResource SectionSubtitle}" />
+    <VerticalStackLayout Padding="-20,0,0,-10"
+                         Spacing="8"
+                         HorizontalOptions="Start">
+        
+        <Label Text="Your Assets"
+               Style="{StaticResource SectionTitle}"
+               HorizontalOptions="Start" />
 
+        <Label Text="See your featured cryptocurrencies below."
+               Style="{StaticResource SectionSubtitle}"
+               HorizontalOptions="Start" />
+        <ScrollView x:Name="ScrollViewHorizontal" Orientation="Horizontal" Margin="-15,5,0,-15" Padding="0">
+             <HorizontalStackLayout Spacing="16" Padding="16" >
+                 <Border Padding="10"
+                         HorizontalOptions="Start"
+                         Stroke="White"
+                         StrokeThickness="1"
+                         StrokeShape="RoundRectangle 10"
+                         BackgroundColor="{StaticResource Secondary}"
+                         WidthRequest="150"
+                         HeightRequest="150"/>
+                 <Border Padding="10"
+                         HorizontalOptions="Start"
+                         Stroke="White"
+                         StrokeThickness="1"
+                         StrokeShape="RoundRectangle 10"
+                         BackgroundColor="{StaticResource Secondary}"
+                         WidthRequest="150"
+                         HeightRequest="150"/>
+                 <Border Padding="10"
+                         HorizontalOptions="Start"
+                         Stroke="White"
+                         StrokeThickness="1"
+                         StrokeShape="RoundRectangle 10"
+                         BackgroundColor="{StaticResource Secondary}"
+                         WidthRequest="150"
+                         HeightRequest="150"/>
+            </HorizontalStackLayout> 
+        </ScrollView>
     </VerticalStackLayout>
 </ContentView>
