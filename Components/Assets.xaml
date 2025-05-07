@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GenovaAI.Components.Assets">
+    
+    <ContentView.Resources>
+        <ResourceDictionary Source="/Resources/Styles/Styles.xaml" />
+        <ResourceDictionary Source="/Resources/Styles/Colors.xaml" />
+        <ResourceDictionary Source="/Resources/Styles/Brushes.xaml" />
+    </ContentView.Resources>
+    
+    
+    <VerticalStackLayout>
+        <Label Text="Your Assets" Style="{StaticResource SectionTitle}" />
+        <Label Text="Veja abaixo suas criptos em destaque." Style="{StaticResource SectionSubtitle}" />
+
+    </VerticalStackLayout>
+</ContentView>

@@ -3,7 +3,43 @@
 <ResourceDictionary 
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    
+    <Style x:Key="BalanceTitle" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource White}" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontAttributes" Value="Bold" />
+    </Style>
 
+    <Style x:Key="SectionTitle" TargetType="Label">
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="Margin" Value="20,10,0,10" />
+        <Setter Property="HorizontalOptions" Value="Start" />
+    </Style>
+    
+    <Style x:Key="SectionSubtitle" TargetType="Label">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="TextColor" Value="#BBBBBB" />
+        <Setter Property="Margin" Value="20,0,0,10" />
+        <Setter Property="HorizontalOptions" Value="Start" />
+    </Style>
+    
+    <Style x:Key="BalanceValue" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource White}" />
+        <Setter Property="FontSize" Value="28" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="Margin" Value="0,0,0,5" />
+    </Style>
+
+    <Style x:Key="ActionButton" TargetType="ImageButton">
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="HeightRequest" Value="100" /> <!-- Aumentado para 80 -->
+        <Setter Property="Padding" Value="0" />      <!-- Espaço interno -->
+        
+    </Style>
+
+  
     <Style TargetType="ActivityIndicator">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
     </Style>
@@ -14,7 +50,7 @@
     </Style>
 
     <Style TargetType="Border">
-        <Setter Property="Stroke" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray500}}" />
+        <Setter Property="Stroke" Value="{AppThemeBinding Dark={StaticResource Gray500}}" />
         <Setter Property="StrokeShape" Value="Rectangle"/>
         <Setter Property="StrokeThickness" Value="1"/>
     </Style>

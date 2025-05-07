@@ -1,0 +1,13 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <LinearGradientBrush x:Key="HorizontalDarkGradientBrush"
+                         StartPoint="0,0"
+                         EndPoint="1,0">
+        <GradientStop Color="#5a2068" Offset="0.0" />
+        <GradientStop Color="#5a2068" Offset="0.1" />
+        <GradientStop Color="#5a2068" Offset="0.3" />
+        <GradientStop Color="#3b104a" Offset="0.6" />
+        <GradientStop Color="#1e0827" Offset="0.9" />
+        <GradientStop Color="#0c0311" Offset="1.0" />
+    </LinearGradientBrush>
+</ResourceDictionary>

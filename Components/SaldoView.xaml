@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:components="clr-namespace:GenovaAI.Components"
+             xmlns:viewModels="clr-namespace:GenovaAI.ViewModels"
+             x:Class="GenovaAI.Components.SaldoView"
+             x:DataType="viewModels:SaldoViewModel">
+    
+    <ContentView.Resources>
+        <ResourceDictionary Source="/Resources/Styles/Styles.xaml" />
+        <ResourceDictionary Source="/Resources/Styles/Colors.xaml" />
+        <ResourceDictionary Source="/Resources/Styles/Brushes.xaml" />
+    </ContentView.Resources>
+    <VerticalStackLayout>
+     <Border Padding="10"
+             StrokeThickness="0"
+             StrokeShape="RoundRectangle 10"
+             WidthRequest="350"
+             HeightRequest="200"
+             BackgroundColor="{StaticResource PrimaryBackground}">
+         <Border.Background>
+             <LinearGradientBrush x:Key="HorizontalDarkGradientBrush"
+                                  StartPoint="0,0" EndPoint="1,0">
+                 <GradientStop Color="#5a2068" Offset="0.0" />
+                 <GradientStop Color="#5a2068" Offset="0.1" />
+                 <GradientStop Color="#5a2068" Offset="0.3" />
+                 <GradientStop Color="#3b104a" Offset="0.6" />
+                 <GradientStop Color="#1e0827" Offset="0.9" />
+                 <GradientStop Color="#0c0311" Offset="1.0" />
+             </LinearGradientBrush>
+         </Border.Background>
+         
+        <VerticalStackLayout Spacing="5">
+            <!-- Título -->
+            <Label Text="Total Balance" Style="{StaticResource BalanceTitle}" />
+            <!-- Valor + Botão de Ocultar -->
+            <Grid ColumnDefinitions="*, Auto" VerticalOptions="Center" RowDefinitions="*,Auto" Margin="0,-8,0,-9">
+                <Label x:Name="SaldoLabel"
+                       Text="{Binding Balance}"
+                       Style="{StaticResource BalanceValue}" />
+                <ImageButton
+                    Source="eye.png"
+                    Style="{StaticResource ActionButton}"
+                    Command="{Binding ToggleBalanceCommand}"
+                    BackgroundColor="Transparent"
+                    Margin="0,-25,0,0"
+                    Grid.Column="1"
+                    Grid.Row="0"/>
+            </Grid>
+            <!-- Variação -->
+            <Label Text="{Binding Variation}"
+                   TextColor="{StaticResource PositiveVariation}"
+                   FontSize="15"
+                   Margin="0,-20"/>
+            <!-- Ações -->
+            <Grid ColumnDefinitions="*,*,*,*">
+                <StackLayout Grid.Column="0" HorizontalOptions="Center" Spacing="-50" Margin="0,10">
+                    <ImageButton Clicked="ImageButton_OnClicked"
+                                  Source="send.png" 
+                                  Command="{Binding ActionCommand}"
+                                  CommandParameter="Send"
+                                  Style="{StaticResource ActionButton}"/>
+                    <Label Text="Send" FontSize="12" TextColor="White" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+                
+                <StackLayout Grid.Column="1" HorizontalOptions="Center" Spacing="-50" Margin="0,10">
+                    <ImageButton
+                        Source="recive.png"
+                        Command="{Binding ActionCommand}"
+                        CommandParameter="Receive"
+                        Clicked="ImageButton_OnClicked"
+                        Style="{StaticResource ActionButton}" />
+                    <Label Text="Receive" FontSize="12" TextColor="White" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="2" HorizontalOptions="Center" Spacing="-45" Margin="0,10">
+                    <ImageButton
+                        Source="convertt.png"
+                        Command="{Binding ActionCommand}"
+                        CommandParameter="Convert"
+                        Clicked="ImageButton_OnClicked"
+                        Style="{StaticResource ActionButton}" />
+                    <Label Text="Convert" FontSize="12" TextColor="White" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+                
+                <StackLayout Grid.Column="3" HorizontalOptions="Center" Spacing="-45" Margin="0,10">
+                    <ImageButton
+                        Source="wallet.png"
+                        Command="{Binding ActionCommand}"
+                        CommandParameter="Wallet"
+                        Clicked="ImageButton_OnClicked"
+                        Style="{StaticResource ActionButton}" />
+                    <Label Text="Wallet" FontSize="12" TextColor="White" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Grid>
+        </VerticalStackLayout>
+    </Border>
+       
+    </VerticalStackLayout>
+</ContentView>

@@ -48,4 +48,9 @@ public partial class DashboardPage : ContentPage
     {
         await Navigation.PushAsync(new RelatorioPage());
     }
+
+    private void OnMostrarOcultarClicked(object? sender, EventArgs e)
+    {
+        throw new NotImplementedException();
+    }
 }

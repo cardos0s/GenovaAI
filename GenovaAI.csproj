@@ -83,6 +83,7 @@
       <MauiXaml Update="View\Dashboard\RelatorioPage.xaml">
         <SubType>Designer</SubType>
       </MauiXaml>
+      <MauiXaml Remove="Components\Saldo.xaml" />
     </ItemGroup>
 
     <ItemGroup>
@@ -107,6 +108,7 @@
         <DependentUpon>RelatorioPage.xaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
+      <Compile Remove="Components\Saldo.xaml.cs" />
     </ItemGroup>
 
 </Project>
