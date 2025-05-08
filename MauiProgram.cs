@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using GenovaAI.Helpers;
+using GenovaAI.Services;
+using Microsoft.Extensions.Logging;
 using SkiaSharp.Views.Maui.Controls.Hosting;
 using PanCardView;
 
@@ -8,6 +10,7 @@ public static class MauiProgram
 {
     public static MauiApp CreateMauiApp()
     {
+      
         var builder = MauiApp.CreateBuilder();
         builder
             .UseSkiaSharp() 
@@ -17,11 +20,16 @@ public static class MauiProgram
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             });
-
+     
 #if DEBUG
         builder.Logging.AddDebug();
+        
 #endif
+        ViewModelLocator.RegisterServices(builder.Services);
 
-        return builder.Build();
+        var app = builder.Build();
+        App.ServiceProvider = app.Services;
+        return app;
+        
     }
 }

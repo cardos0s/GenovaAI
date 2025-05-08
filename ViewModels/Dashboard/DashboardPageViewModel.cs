@@ -80,7 +80,7 @@ namespace GenovaAI.ViewModels
         
         public async Task AtualizarGraficoInvestimentoAsync()
         {
-            var cotacoes = await _cryptoService.ObterCotacoesAsync();
+            var cotacoes = await _cryptoService.GetCryptoPricesAsync();
             if (cotacoes == null) return;
 
             var novoGrafico = new DonutChart

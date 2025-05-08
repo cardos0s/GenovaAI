@@ -4,47 +4,43 @@
              xmlns:componentes="clr-namespace:GenovaAI.Components"
              x:Class="GenovaAI.View.DashboardPage"
              Shell.NavBarIsVisible="False">
-    
+
     <Border.Background>
-            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                <GradientStop Color="#5a2068" Offset="0.0" />
-                <GradientStop Color="#5a2068" Offset="0.1" />
-                <GradientStop Color="#5a2068" Offset="0.3" />
-                <GradientStop Color="#3b104a" Offset="0.6" />
-                <GradientStop Color="#1e0827" Offset="0.9" />
-                <GradientStop Color="#0c0311" Offset="1.0" />
-            </LinearGradientBrush>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#5a2068" Offset="0.0" />
+            <GradientStop Color="#5a2068" Offset="0.1" />
+            <GradientStop Color="#5a2068" Offset="0.3" />
+            <GradientStop Color="#3b104a" Offset="0.6" />
+            <GradientStop Color="#1e0827" Offset="0.9" />
+            <GradientStop Color="#0c0311" Offset="1.0" />
+        </LinearGradientBrush>
     </Border.Background>
-    
+
     <ContentPage.Content>
-        <Grid RowDefinitions="Auto,Auto,Auto,*"
-              ColumnDefinitions="*"
-              Padding="16" >
-            
-            <!-- Boas-vindas -->
-            <Label Text="Welcome Back," 
-                   TextColor="White" 
-                   FontSize="20"/>
-            <Label Text="Shelby" 
-                   Grid.Row="1" 
-                   TextColor="Yellow" 
-                   FontSize="20"/>
-            
-            <VerticalStackLayout Padding="16" Spacing="36" Margin="16" Grid.Row="2">
-                <componentes:SaldoView />
-                <componentes:Assets />
-            </VerticalStackLayout>
-       </Grid>
+
+        <ScrollView>
+            <Grid RowDefinitions="Auto,Auto,Auto,*"
+                  ColumnDefinitions="*"
+                  Padding="16">
+
+                <!-- Boas-vindas -->
+                <Label Text="Welcome Back," 
+                       TextColor="White" 
+                       FontSize="20"/>
+
+                <Label Text="Shelby" 
+                       Grid.Row="1" 
+                       TextColor="Yellow" 
+                       FontSize="20"/>
+
+                <VerticalStackLayout Padding="16" Spacing="36" Margin="16" Grid.Row="2">
+                    <componentes:SaldoView />
+                    <componentes:CryptoCard />
+                    <componentes:CryptoCardList x:Name="CryptoCardList" />
+                </VerticalStackLayout>
+
+            </Grid>
+        </ScrollView>
+
     </ContentPage.Content>
-    
-
-
-
-
-
-
-
-
-
-
 </ContentPage>
