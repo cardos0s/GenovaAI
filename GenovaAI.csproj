@@ -96,19 +96,14 @@
         <DependentUpon>DashboardPage.xaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
-      <Compile Update="ViewModels\Dashboard\IAPage.xaml.cs">
-        <DependentUpon>IAPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-      <Compile Update="ViewModels\Dashboard\InvestmentPage.xaml.cs">
-        <DependentUpon>InvestmentPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
       <Compile Update="ViewModels\Dashboard\RelatorioPage.xaml.cs">
         <DependentUpon>RelatorioPage.xaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
       <Compile Remove="Components\Saldo.xaml.cs" />
+      <Compile Remove="ViewModels\Dashboard\IAPage.xaml.cs" />
+      <Compile Remove="ViewModels\Dashboard\InvestmentCardViewModel.cs" />
+      <Compile Remove="ViewModels\Dashboard\InvestmentPage.xaml.cs" />
     </ItemGroup>
 
 </Project>
