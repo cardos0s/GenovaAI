@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GenovaAI.View.Dashboard;
-
+namespace GenovaAI.View.Components;
 public partial class Saldo : ContentView
 {
     public Saldo()

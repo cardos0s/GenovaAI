@@ -1,0 +1,11 @@
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:components="clr-namespace:GenovaAI.Components"
+             xmlns:components1="clr-namespace:GenovaAI.View.Components"
+             x:Class="GenovaAI.View.Components.Saldo"
+             Shell.NavBarIsVisible="False">
+
+    <VerticalStackLayout>
+        <components1:Saldo />
+    </VerticalStackLayout>
+</ContentView>

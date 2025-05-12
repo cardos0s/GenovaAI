@@ -8,20 +8,27 @@
     xmlns:components="clr-namespace:GenovaAI.Components"
     x:DataType="viewModels:CryptoCardListViewModel">
 
-    <VerticalStackLayout Padding="10">
-
-        <Label Text="Your Crypto Assets" FontAttributes="Bold" TextColor="White" Margin="-10,-10,0,0"/>
-
-        <ScrollView Orientation="Horizontal" Margin="0" Padding="0">
-            <CollectionView ItemsSource="{Binding Cards}" ItemsLayout="HorizontalList" HorizontalOptions="Start"
-                            VerticalOptions="Center" Margin="-10">
+    <VerticalStackLayout Padding="5">
+        <Label Text="Your Crypto Assets"
+               FontAttributes="Bold" 
+               FontSize="20"
+               TextColor="White" 
+               Margin="-15,-10,0,8"
+               Padding="0"/>
+            <CollectionView ItemsSource="{Binding Cards}"
+                            ItemsLayout="HorizontalList" 
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            HeightRequest="180"
+                            Margin="-15,0,-10,0"
+                            HorizontalScrollBarVisibility="Always">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="viewModels:CryptoCardViewModel">
                         <components:CryptoCard BindingContext="{Binding .}" />
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-        </ScrollView>
+       
 
         <Button Text="👁 Toggle Balance"
                 Command="{Binding ToggleBalanceCommand}"

@@ -2,8 +2,7 @@ using GenovaAI.Components;
 using GenovaAI.Models;
 using GenovaAI.ViewModels;
 
-namespace GenovaAI.View;
-
+namespace GenovaAI.Views.Dashboard;
 public partial class DashboardPage : ContentPage
 {
     private readonly DashboardPageViewModel viewModel = new();
