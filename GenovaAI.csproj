@@ -74,16 +74,10 @@
       <MauiXaml Update="View\Dashboard\DashboardPage.xaml">
         <SubType>Designer</SubType>
       </MauiXaml>
-      <MauiXaml Update="View\Dashboard\IAPage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
-      <MauiXaml Update="View\Dashboard\InvestmentPage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
-      <MauiXaml Update="View\Dashboard\RelatorioPage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
       <MauiXaml Remove="Components\Saldo.xaml" />
+      <MauiXaml Remove="View\Dashboard\IAPage.xaml" />
+      <MauiXaml Remove="View\Dashboard\RelatorioPage.xaml" />
+      <MauiXaml Remove="View\Dashboard\InvestmentPage.xaml" />
     </ItemGroup>
 
     <ItemGroup>
@@ -96,19 +90,17 @@
         <DependentUpon>DashboardPage.xaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
-      <Compile Update="ViewModels\Dashboard\IAPage.xaml.cs">
-        <DependentUpon>IAPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-      <Compile Update="ViewModels\Dashboard\InvestmentPage.xaml.cs">
-        <DependentUpon>InvestmentPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-      <Compile Update="ViewModels\Dashboard\RelatorioPage.xaml.cs">
-        <DependentUpon>RelatorioPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
       <Compile Remove="Components\Saldo.xaml.cs" />
+      <Compile Remove="ViewModels\Dashboard\IAPage.xaml.cs" />
+      <Compile Remove="ViewModels\Dashboard\InvestmentCardViewModel.cs" />
+      <Compile Remove="ViewModels\Dashboard\InvestmentPage.xaml.cs" />
+      <Compile Remove="ViewModels\Dashboard\RelatorioPage.xaml.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="View\Components\CryptoCard.xaml" />
+      <AdditionalFiles Include="View\Components\CryptoCardList.xaml" />
+      <AdditionalFiles Include="View\Components\SaldoView.xaml" />
     </ItemGroup>
 
 </Project>

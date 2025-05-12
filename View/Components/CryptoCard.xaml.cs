@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GenovaAI.Services;
+using GenovaAI.ViewModels;
 
-namespace GenovaAI.View.Dashboard;
+namespace GenovaAI.Components;
 
-public partial class Saldo : ContentView
+public partial class CryptoCard : ContentView
 {
-    public Saldo()
+    public CryptoCard()
     {
         InitializeComponent();
     }
